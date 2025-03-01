@@ -1,0 +1,8 @@
+A1_AD_VILLEGAS.py
+README.md
+setup.py
+Actividad_1_A_D.egg-info/PKG-INFO
+Actividad_1_A_D.egg-info/SOURCES.txt
+Actividad_1_A_D.egg-info/dependency_links.txt
+Actividad_1_A_D.egg-info/requires.txt
+Actividad_1_A_D.egg-info/top_level.txt
