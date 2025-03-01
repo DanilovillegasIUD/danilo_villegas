@@ -25,6 +25,8 @@ jobs:
         run: ./venv/Scripts/activate   
       - name: paso3 - actualizar pip
         run: pip install --upgrade pip
+      - name: Instalar requests
+        run: pip install requests
       - name: paso4 - instalar dependencias
         run: pip install -e .
       - name: paso5 - Ejecutar script
