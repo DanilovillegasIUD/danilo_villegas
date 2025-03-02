@@ -1,67 +1,33 @@
-import tkinter as tk
+# Evidencia de aprendizaje Clases, Objetos y archivos de datos en Python
+
+# Danilo Villegas Restrepo - IUDIGITAL
+
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
 import json
 import requests
 
+# Punto 1 Crear una IU que grafique un número arbitrario de polinomios de la forma ax^n donde 𝑎 y n son parámetros.
 
-# Punto 1
+polinomios = [(2, 2), (-1, 3), (0.5, 4)] 
 
-# La siguiente clase agrupa las funciones que generan una ventana emergente con 2 botones y los ubica en la ventana
+x = np.linspace(-10, 10, 100)
 
-class Graficador:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Graficador de Polinomios")
-        self.polinomios = []  
+plt.figure()
+for a, n in polinomios:
+    y = a * (x ** n)
+    plt.plot(x, y, label=f"{a}x^{n}")
 
-        
-        tk.Label(root, text="Parametro (a):").pack()
-        self.a_entry = tk.Entry(root)
-        self.a_entry.pack()
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.title("Gráfica de Polinomios")
+plt.grid()
+plt.savefig("grafico_polinomios.png")
+print("Grafica generada")
 
-        tk.Label(root, text="Exponente (n):").pack()
-        self.n_entry = tk.Entry(root)
-        self.n_entry.pack()
-
-        
-        tk.Button(root, text="Agrega un polinomio", command=self.agregar_polinomio).pack()
-        tk.Button(root, text="Graficar", command=self.graficar).pack()
-
-# En la siguiente funcion se piden los valores de a y n para guardarlos en un polinomio despues de pulsar el boton dado
-# para luego crear la funcion del tipo ax^n
-    def agregar_polinomio(self):
-        """Agrega un polinomio a la lista."""
-        try:
-            a = float(self.a_entry.get())
-            n = int(self.n_entry.get())
-            self.polinomios.append((a, n))
-            print(f"Agregado: {a}x^{n}")
-        except ValueError:
-            print("Error: Ingresaste un valor no numerico, solo numeros por favor.")
-
-# en la siguiente funcion le crea la accion de graficar los polinomios en un plano xy en un rango de x de -10 a 10 
-# y una amplitud en y de 100.
-
-    def graficar(self):
-        """Dibuja los polinomios en un gráfico."""
-        x = np.linspace(-10, 10, 100)
-        for a, n in self.polinomios:
-            y = a * (x ** n)
-            plt.plot(x, y, label=f"{a}x^{n}")
-
-        plt.xlabel("x")
-        plt.ylabel("y")
-        plt.legend()
-        plt.show()
-
-# A continuacion llama las funciones para abrir la ventana emergente
-root = tk.Tk()
-app = Graficador(root)
-root.mainloop()
-
-# Punto 2
+# Punto 2 Escritura de Datos en un Archivo CSV. Escribe un script que guarde una lista de listas en un archivo llamado frutas.csv en tu directorio principal
 
 # Se crea una lista con los datos de las frutas, se crea un objeto donde guardar la lista con una terminacion csv
 frutas = [
@@ -82,7 +48,7 @@ with open(archivo_csv, mode="w", newline="", encoding="utf-8") as archivo:
 print(f"Archivo {archivo_csv} guardado.")
 
 
-# Punto 3
+# Punto 3 Lectura de Datos de un Archivo CSV, Escribe un script que lea los datos del archivo frutas.csv creado en el Reto 1 y los almacene en una lista de listas llamada datos_frutas.
 
 archivo_csv = "frutas.csv"
 
@@ -100,7 +66,7 @@ print("Datos de frutas:")
 for fruta in datos_frutas:
     print(fruta)
 
-# Punto 4
+# Punto 4 Usa la plataforma JSONPlaceholder y practica lo que aprendiste en la Actividad 2 para inventar tu propia pipeline de acciones en python sobre el conjunto de datos de tu preferencia en la plataforma
 
 # Aca se crea un objeto con una url donde reposan los datos a trabajar
 
