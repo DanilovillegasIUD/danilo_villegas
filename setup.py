@@ -3,15 +3,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Actividad_1_A_D",
-    version="0.0.1",
+    name="Actividad_2",
+    version="0.0.2",
     author="Danilo Villegas",
     author_email="danilo.villegas@est.iudigital.edu.co",
-    description="Evidencia de aprendizaje Clases, Objetos y archivos de datos en Python",
-    py_modules=["A1_AD_VILLEGAS"],
+    description="Evidencia de aprendizaje Numero 2",
+    py_modules=["A2_VILLEGAS_DANILO"],
     install_requires=[
         "pandas",
-        "matplotlib"
+        "matplotlib",
+        "numpy",
+        "matplotlib",
+        "Scipy"
     ]
     
     
