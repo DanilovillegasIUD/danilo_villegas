@@ -70,6 +70,19 @@ print(review2.head(5))
 
 print("-->> Dataframe del punto 5 con las primeras del DataFrame anterior, se guardó en .csv con exito en la carpeta Actividad_3")
 
+# Punto 6. Se uiliza el metodo .info() y shpe para conocer la cantidad de entradas del dataset de wine review
+
+numero_entradas = review2.shape
+entradas_resumen = review.info
+resultado = pd.DataFrame({"Numero_entradas (filas, columnas)" : [numero_entradas]})
+resultado.to_csv("ACTIVIDAD_3/Punto_6.csv")
+
+resultado2 = pd.DataFrame([entradas_resumen])
+resultado2.to_csv("ACTIVIDAD_3/Punto_6_resumen.csv")
+print("Se han encontrado un total de entradas de filas y columnas de: ", review.shape)
+print("Informacion de los registros:", review.info)
+
+print("-->> Dataframe del punto 6 para averiguar cuántas entradas hay, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
