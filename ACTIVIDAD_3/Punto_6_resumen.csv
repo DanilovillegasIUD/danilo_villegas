@@ -1,0 +1,15 @@
+,0
+0,"<bound method DataFrame.info of        Unnamed: 0   country  ...             variety                   winery
+0               1  Portugal  ...      Portuguese Red      Quinta dos Avidagos
+1               2        US  ...            Riesling               St. Julian
+2               3        US  ...          Pinot Noir             Sweet Cheeks
+3               4     Spain  ...  Tempranillo-Merlot                   Tandem
+4               5     Italy  ...            Frappato          Terre di Giurfo
+...           ...       ...  ...                 ...                      ...
+23356       23357        US  ...          Chardonnay                   Diatom
+23357       23358    France  ...               RosÃ©  Domaine de la MordorÃ©e
+23358       23359        US  ...  Cabernet Sauvignon           Fielding Hills
+23359       23360   Austria  ...  Austrian Red Blend        Gerhard Pittnauer
+23360       23361  Portugal  ...      Portuguese Red                   PoÃ§as
+
+[23361 rows x 11 columns]>"
