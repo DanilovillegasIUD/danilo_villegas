@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:45b1171a27a974679e078379228275754485083112d80cf370a927b46ec5eb0f
-size 115
+,Utensilio,Cantidad,Medida
+0,Cuchara,3,unidades
+1,Tenedor,2,unidades
+2,Cuchillo,4,unidades
+3,Plato,5,unidades
