@@ -9,7 +9,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import kagglehub
 import os
-import zipfile
 
 # Punto 1. Se genera DataFrame de Frutas y se guardan en un archivo .csv
 
