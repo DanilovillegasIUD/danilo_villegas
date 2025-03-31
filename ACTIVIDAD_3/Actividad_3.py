@@ -57,6 +57,18 @@ print(review.head(10))
 review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
 review.to_csv("Punto_4_review.csv")
 
+print("-->> Dataframe del punto 4, extraido de la base de datos de Kaggle guardado en .csv con exito en la carpeta Actividad_3")
+
+# Punto 5. Se muestran las primeras filas del DataFrame generado en el punto anterior. Se guardan en un archivo .csv
+
+file_path2 = "Punto_4_review.csv"
+review2 = pd.read_csv(file_path2)
+primeras_filas= review2.head(5)
+primeras_filas.to_csv("ACTIVIDAD_3/Punto_5_review.csv")
+
+print(review2.head(5))
+
+print("-->> Dataframe del punto 5 con las primeras del DataFrame anterior, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
