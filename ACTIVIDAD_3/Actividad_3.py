@@ -31,5 +31,21 @@ Venta_frutas = pd.DataFrame({
 print (Venta_frutas)
 Venta_frutas.to_csv("ACTIVIDAD_3/Punto_2.csv")
 
+print("-->> Dataframe del punto 2 guardado en .csv con exito en carpeta Actividad_3")
+
+# Punto 3. Se muestra el DataFrame con los utensilios de cocina. Se guardan en un archivo .csv
+
+cocina = pd.DataFrame({
+    "Utensilio": ["Cuchara", "Tenedor", "Cuchillo", "Plato"],
+    "Cantidad": [3, 2, 4, 5],
+    "Medida": ["unidades", "unidades", "unidades", "unidades"]
+})
+
+print (cocina)
+cocina.to_csv("ACTIVIDAD_3/Punto_3.csv")
+
+print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Actividad_3")
+
+
 
 
