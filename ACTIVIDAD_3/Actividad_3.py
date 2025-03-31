@@ -123,9 +123,9 @@ vino_caro = review2.loc[max_precio]
 
 vino_caro_dataframe = pd.DataFrame([vino_caro])
 
-vino_caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv", encoding='utf-8')
+vino_caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv", encoding="utf-8")
 
-print(vino_caro.to_string(encoding='utf-8'))
+print(vino_caro.to_string(encoding="utf-8"))
 
 print("-->> Dataframe del punto 10 con la informacion completa del vino mas caro, se guardó en .csv con exito en la carpeta Actividad_3")
 
