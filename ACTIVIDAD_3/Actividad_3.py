@@ -46,30 +46,18 @@ cocina.to_csv("ACTIVIDAD_3/Punto_3.csv")
 
 print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Actividad_3")
 
-
 # Punto 4. se descarga el dataset "wine review" desde kaggle, guardandolo en el entorno de trabajo, para cargarlo
 # en un nuevo DataFrame. Se guardan en un archivo .csv
 
-file_path1= "winemag-data-130k-v2.csv"
+file_path1= "data_vinos.csv"
 review = pd.read_csv(file_path1)
-primeras_filas = review.head(500)
-primeras_filas.to_csv("Punto_4_review.csv")
-primeras_filas.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
+print(review.head(20))
 
-print(primeras_filas.head(20))
+review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
+review.to_csv("Punto_4_review.csv")
 
-print("-->> Dataframe del punto 4, extraido de la base de datos de Kaggle guardado en .csv con exito en la carpeta Actividad_3")
 
-# Punto 5. Se muestran las primeras filas del DataFrame generado en el punto anterior. Se guardan en un archivo .csv
 
-file_path2 = "Punto_4_review.csv"
-review2 = pd.read_csv(file_path2)
-primeras_filas= review2.head(5)
-primeras_filas.to_csv("ACTIVIDAD_3/Punto_5_review.csv")
-
-print(review2.head(5))
-
-print("-->> Dataframe del punto 5 con las primeras del DataFrame anterior, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
