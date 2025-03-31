@@ -49,12 +49,14 @@ print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Activida
 # Punto 4. se descarga el dataset "wine review" desde kaggle, guardandolo en el entorno de trabajo, para cargarlo
 # en un nuevo DataFrame. Se guardan en un archivo .csv
 
-file_path1= "data_vinos.csv"
+file_path1= "winemag-data-130k-v2.csv"
 review = pd.read_csv(file_path1)
 print(review.head(20))
 
 review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
 review.to_csv("Punto_4_review.csv")
+
+
 
 
 
