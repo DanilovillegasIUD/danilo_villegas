@@ -93,6 +93,30 @@ resultado_promedio.to_csv("ACTIVIDAD_3/Punto_7.csv")
 print("El precio promedio de los vinos es de: $",promedio)
 print("-->> Dataframe del punto 7 con el precio promedio de los vinos, se guardó en .csv con exito en la carpeta Actividad_3")
 
+# Punto 8. Se busca el precio pagado mas alto por un vino
+
+mayor_precio = round(review2['price'].max(),3)
+vino_mayor_precio = review2[review2['price'] == mayor_precio]
+variedad = vino_mayor_precio['variety'].iloc[0]  # Tomar la primera coincidencia
+
+precio_alto = pd.DataFrame ({"Precio_mas_alto":[mayor_precio], "Variedad": [variedad]})
+
+precio_alto.to_csv("ACTIVIDAD_3/Punto_8.csv")
+
+print(f"El vino de mayor precio pagadp es de ${mayor_precio} y su variedad es: {variedad}.")
+print("-->> Dataframe del punto 8 con el precio mas alto pagado por un vino, se guardó en .csv con exito en la carpeta Actividad_3")
+
+# Punto 9. DataFrame de Vinos de California
+
+california = pd.DataFrame(review2[review2['province'] == 'California'])
+vinos_california = california.info
+
+vinos_california_dataframe = pd.DataFrame([vinos_california])
+vinos_california_dataframe.to_csv("ACTIVIDAD_3/Punto_9.csv")
+
+print("Vinos de California:", california.info)
+
+print("-->> Dataframe del punto 9 con los vinos de california, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
