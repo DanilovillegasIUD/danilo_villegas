@@ -18,7 +18,7 @@ Datos_frutas = pd.DataFrame({
 "Tomates": [50, 100]
                 })
 print (Datos_frutas)
-Datos_frutas.to_csv(ACTIVIDAD_3/Punto_1.csv)
+Datos_frutas.to_csv("ACTIVIDAD_3/Punto_1.csv)
 
 print("-->> Dataframe del punto 1 guardado en .csv con exito en carpeta Actividad_3")
 
@@ -30,7 +30,7 @@ Venta_frutas = pd.DataFrame({
 "Tomates": [50, 100],
                 })
 print (Venta_frutas)
-Venta_frutas.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_2.csv")
+Venta_frutas.to_csv("ACTIVIDAD_3/Punto_2.csv")
 
 print("-->> Dataframe del punto 2 guardado en .csv con exito en carpeta Actividad_3")
 
@@ -43,7 +43,7 @@ cocina = pd.DataFrame({
 })
 
 print (cocina)
-cocina.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_3.csv")
+cocina.to_csv("ACTIVIDAD_3/Punto_3.csv")
 
 print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Actividad_3")
 
@@ -55,8 +55,8 @@ file_path1= "winemag-data-130k-v2.csv"
 review = pd.read_csv(file_path1)
 print(review.head(20))
 
-review.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_4_review.csv")
-review.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\Punto_4_review.csv")
+review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
+review.to_csv("Punto_4_review.csv")
 
 print("-->> Dataframe del punto 4, extraido de la base de datos de Kaggle guardado en .csv con exito en la carpeta Actividad_3")
 
@@ -65,7 +65,7 @@ print("-->> Dataframe del punto 4, extraido de la base de datos de Kaggle guarda
 file_path2 = "Punto_4_review.csv"
 review2 = pd.read_csv(file_path2)
 primeras_filas= review2.head(5)
-primeras_filas.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_5_review.csv")
+primeras_filas.to_csv("ACTIVIDAD_3/Punto_5_review.csv")
 
 print(review2.head(5))
 
@@ -76,10 +76,10 @@ print("-->> Dataframe del punto 5 con las primeras del DataFrame anterior, se gu
 numero_entradas = review2.shape
 entradas_resumen = review.info
 resultado = pd.DataFrame({"Numero_entradas (filas, columnas)" : [numero_entradas]})
-resultado.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_6.csv")
+resultado.to_csv("ACTIVIDAD_3/Punto_6.csv")
 
 resultado2 = pd.DataFrame([entradas_resumen])
-resultado2.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_6_resumen.csv")
+resultado2.to_csv("ACTIVIDAD_3/Punto_6_resumen.csv")
 print("Se han encontrado un total de entradas de filas y columnas de: ", review.shape)
 print("Informacion de los registros:", review.info)
 
@@ -89,7 +89,7 @@ print("-->> Dataframe del punto 6 para averiguar cuántas entradas hay, se guard
 
 promedio = round(review['price'].mean(),3)
 resultado_promedio = pd.DataFrame({"Modena":["$"],"Precio_promedio": [promedio] })
-resultado_promedio.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_7.csv")
+resultado_promedio.to_csv("ACTIVIDAD_3/Punto_7.csv")
 print(resultado_promedio)
 print("El precio promedio de los vinos es de: $",promedio)
 print("-->> Dataframe del punto 7 con el precio promedio de los vinos, se guardó en .csv con exito en la carpeta Actividad_3")
@@ -102,7 +102,7 @@ variedad = vino_mayor_precio['variety'].iloc[0]  # Tomar la primera coincidencia
 
 precio_alto = pd.DataFrame ({"Precio_mas_alto":[mayor_precio], "Variedad": [variedad]})
 
-precio_alto.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_8.csv")
+precio_alto.to_csv("ACTIVIDAD_3/Punto_8.csv")
 
 print(precio_alto)
 
@@ -115,7 +115,7 @@ california = pd.DataFrame(review[review['province'] == 'California'])
 vinos_california = california.info
 
 vinos_california_dataframe = pd.DataFrame([vinos_california])
-vinos_california_dataframe.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_9.csv")
+vinos_california_dataframe.to_csv("ACTIVIDAD_3/Punto_9.csv")
 
 print("Vinos de California:", california.info)
 
@@ -128,7 +128,7 @@ vino_caro = review.loc[max_precio]
 
 vino_Caro_dataframe = pd.DataFrame([vino_caro])
 
-vino_Caro_dataframe.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_10.csv")
+vino_Caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv")
 
 print(vino_caro)
 
@@ -139,7 +139,7 @@ print("-->> Dataframe del punto 10 con la informacion completa del vino mas caro
 uvas_comunes = california['variety'].value_counts()
 uvas_comunes1 = pd.DataFrame({"Variedad":uvas_comunes.index, "Cantidad":uvas_comunes.values})
 
-uvas_comunes1.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_11.csv")
+uvas_comunes1.to_csv("ACTIVIDAD_3/Punto_11.csv")
 
 print("las uvas mas comunes en California son:", uvas_comunes)
 print("-->> Dataframe del punto 11 con los tipos de uva mas comunes en california, se guardó en .csv con exito en la carpeta Actividad_3")
@@ -150,7 +150,7 @@ uvas_comunes = california['variety'].value_counts()
 
 primeras_10 = uvas_comunes1.head(10)
 
-primeras_10.to_csv("D:\ESTUDIO\INGENIERIA\SEMESTRE I\ANALITICA DE DATOS\REPOSITORIO\danilo_villegas\ACTIVIDAD_3/Punto_12.csv")
+primeras_10.to_csv("ACTIVIDAD_3/Punto_12.csv")
 
 print(uvas_comunes.head(10))
 
