@@ -52,10 +52,11 @@ print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Activida
 
 file_path1= "winemag-data-130k-v2.csv"
 review = pd.read_csv(file_path1)
-print(review.head(20))
+primeras_filas = review.head(500)
+primeras_filas.to_csv("Punto_4_review.csv")
+primeras_filas.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
 
-review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
-review.to_csv("Punto_4_review.csv")
+print(primeras_filas.head(20))
 
 print("-->> Dataframe del punto 4, extraido de la base de datos de Kaggle guardado en .csv con exito en la carpeta Actividad_3")
 
@@ -71,31 +72,7 @@ print(review2.head(5))
 print("-->> Dataframe del punto 5 con las primeras del DataFrame anterior, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
-# Punto 6. Se uiliza el metodo .info() y shpe para conocer la cantidad de entradas del dataset de wine review
 
-numero_entradas = review2.shape
-entradas_resumen = review.info
-resultado = pd.DataFrame({"Numero_entradas (filas, columnas)" : [numero_entradas]})
-resultado.to_csv("ACTIVIDAD_3/Punto_6.csv")
-
-resultado2 = pd.DataFrame([entradas_resumen])
-resultado2.to_csv("ACTIVIDAD_3/Punto_6_resumen.csv")
-print("Se han encontrado un total de entradas de filas y columnas de: ", review.shape)
-print("Informacion de los registros:", review.info)
-
-print("-->> Dataframe del punto 6 para averiguar cuántas entradas hay, se guardó en .csv con exito en la carpeta Actividad_3")
-
-# Punto 7. Conocer el precio promedios de los vinos.
-
-file_path3= "winemag-data-130k-v2.csv"
-review3 = pd.read_csv(file_path1)
-
-promedio = round(review3['price'].mean(),3)
-resultado_promedio = pd.DataFrame({"Moneda":["$"],"Precio_promedio": [promedio] })
-resultado_promedio.to_csv("ACTIVIDAD_3/Punto_7.csv")
-
-print("El precio promedio de los vinos es de: $",promedio)
-print("-->> Dataframe del punto 7 con el precio promedio de los vinos, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
