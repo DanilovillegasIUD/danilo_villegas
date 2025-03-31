@@ -87,10 +87,13 @@ print("-->> Dataframe del punto 6 para averiguar cuántas entradas hay, se guard
 
 # Punto 7. Conocer el precio promedios de los vinos.
 
-promedio = round(review['price'].mean(),3)
+file_path3= "winemag-data-130k-v2.csv"
+review3 = pd.read_csv(file_path1)
+
+promedio = round(review3['price'].mean(),3)
 resultado_promedio = pd.DataFrame({"Moneda":["$"],"Precio_promedio": [promedio] })
 resultado_promedio.to_csv("ACTIVIDAD_3/Punto_7.csv")
-print(resultado_promedio)
+
 print("El precio promedio de los vinos es de: $",promedio)
 print("-->> Dataframe del punto 7 con el precio promedio de los vinos, se guardó en .csv con exito en la carpeta Actividad_3")
 
