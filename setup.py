@@ -15,7 +15,6 @@ setup(
         "seaborn>=0.11.2",
         "pandas",
         "numpy",
-        "openpyxl",
         "requests"
     ]
     
