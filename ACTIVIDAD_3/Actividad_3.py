@@ -51,7 +51,8 @@ print("-->> Dataframe del punto 3 guardado en .csv con exito en carpeta Activida
 
 file_path1= "data_vinos_2.csv"
 review = pd.read_csv(file_path1, sep=';')
-print(review.head(20))
+
+print(review.head(10))
 
 review.to_csv("ACTIVIDAD_3/Punto_4_review.csv")
 review.to_csv("Punto_4_review.csv")
