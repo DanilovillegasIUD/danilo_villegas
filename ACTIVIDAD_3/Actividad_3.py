@@ -114,7 +114,7 @@ vinos_california = california.info
 vinos_california_dataframe = pd.DataFrame([vinos_california])
 vinos_california_dataframe.to_csv("ACTIVIDAD_3/Punto_9.csv")
 
-print("Vinos de California:", california.info)
+print(vinos_california_dataframe.head(10))
 
 print("-->> Dataframe del punto 9 con los vinos de california, se guardó en .csv con exito en la carpeta Actividad_3")
 
