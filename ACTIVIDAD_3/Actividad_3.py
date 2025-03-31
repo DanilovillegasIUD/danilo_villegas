@@ -21,4 +21,15 @@ Datos_frutas.to_csv("ACTIVIDAD_3/Punto_1.csv")
 
 print("-->> Dataframe del punto 1 guardado en .csv con exito en carpeta Actividad_3")
 
+# Punto 2. Se genera DataFrame con las ventas de frutas en año 2021 y 2022. Se guardan en un archivo .csv
+
+Venta_frutas = pd.DataFrame({
+    "": ["Ventas2021", "ventas2022"],
+    "Granadilla": [20, 49],
+"Tomates": [50, 100],
+                })
+print (Venta_frutas)
+Venta_frutas.to_csv("ACTIVIDAD_3/Punto_2.csv")
+
+
 
