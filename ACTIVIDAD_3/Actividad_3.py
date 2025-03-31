@@ -17,7 +17,7 @@ Datos_frutas = pd.DataFrame({
 "Tomates": [50, 100]
                 })
 print (Datos_frutas)
-Datos_frutas.to_csv("ACTIVIDAD_3/Punto_1.csv)
+Datos_frutas.to_csv("ACTIVIDAD_3/Punto_1.csv")
 
 print("-->> Dataframe del punto 1 guardado en .csv con exito en carpeta Actividad_3")
 
