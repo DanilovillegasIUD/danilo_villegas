@@ -121,11 +121,11 @@ print("-->> Dataframe del punto 9 con los vinos de california, se guardó en .cs
 max_precio = review2['price'].idxmax()
 vino_caro = review2.loc[max_precio]
 
-vino_Caro_dataframe = pd.DataFrame([vino_caro])
+vino_caro_dataframe = pd.DataFrame([vino_caro])
 
-vino_Caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv")
+vino_caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv")
 
-print("la Informacion del vino mas caro es: ",vino_caro)
+print(vino_caro)
 
 print("-->> Dataframe del punto 10 con la informacion completa del vino mas caro, se guardó en .csv con exito en la carpeta Actividad_3")
 
