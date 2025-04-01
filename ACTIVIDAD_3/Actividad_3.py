@@ -137,6 +137,15 @@ uvas_comunes1.to_csv("ACTIVIDAD_3/Punto_11.csv")
 print("las uvas mas comunes en California son:", uvas_comunes)
 print("-->> Dataframe del punto 11 con los tipos de uva mas comunes en california, se guardó en .csv con exito en la carpeta Actividad_3")
 
+# Punto 12. Sacar DataFrame con los 10 tipos de una mas comunes en california
+
+uvas_comunes = california['variety'].value_counts()
+primeras_10 = uvas_comunes1.head(10)
+
+primeras_10.to_csv("ACTIVIDAD_3/Punto_12.csv")
+
+print(uvas_comunes.head(10))
+print("-->> Dataframe del punto 12 con los 10 tipos de uva mas comunes en california, se guardó en .csv con exito en la carpeta Actividad_3")
 
 
 
