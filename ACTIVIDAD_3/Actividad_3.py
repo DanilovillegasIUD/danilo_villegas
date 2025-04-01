@@ -127,6 +127,16 @@ vino_caro_dataframe.to_csv("ACTIVIDAD_3/Punto_10.csv")
 print(vino_caro)
 print("-->> Dataframe del punto 10 con la informacion completa del vino mas caro, se guardó en .csv con exito en la carpeta Actividad_3")
 
+# Punto 11. Buscar las variedades de uvas mas comunes en California
+
+uvas_comunes = california['variety'].value_counts()
+uvas_comunes1 = pd.DataFrame({"Variedad":uvas_comunes.index, "Cantidad":uvas_comunes.values})
+
+uvas_comunes1.to_csv("ACTIVIDAD_3/Punto_11.csv")
+
+print("las uvas mas comunes en California son:", uvas_comunes)
+print("-->> Dataframe del punto 11 con los tipos de uva mas comunes en california, se guardó en .csv con exito en la carpeta Actividad_3")
+
 
 
 
