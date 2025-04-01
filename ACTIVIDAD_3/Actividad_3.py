@@ -121,7 +121,7 @@ print("-->> Dataframe del punto 9 con los vinos de california, se guardó en .cs
 max_precio = review2['price'].idxmax()
 vino_caro = review2.loc[max_precio]
 
-print(vino_caro.to_string)
+print(vino_caro)
 
 print("-->> Dataframe del punto 10 con la informacion completa del vino mas caro, se guardó en .csv con exito en la carpeta Actividad_3")
 
