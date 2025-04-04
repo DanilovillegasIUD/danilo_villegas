@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: Actividad_3-y-Final
+Version: 0.0.4
+Summary: Evidencia de aprendizaje Numero 3 y Final
+Author: Danilo Villegas Restrepo
+Author-email: danilo.villegas@est.iudigital.edu.co
+Requires-Dist: kagglehub[pandas-datasets]>=0.3.8
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: seaborn>=0.11.2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
